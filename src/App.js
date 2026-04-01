@@ -4,10 +4,10 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Text, View, ActivityIndicator } from 'react-native';
-import { store, persistor } from './src/store/store';
-import { selectCartCount } from './src/store/cartSlice';
-import ProductListScreen from './src/screens/ProductListScreen';
-import CartScreen from './src/screens/CartScreen';
+import { store, persistor } from './store';
+import { selectCartCount } from './cartSlice';
+import ProductListScreen from './ProductListScreen';
+import CartScreen from './CartScreen';
 
 const Tab = createBottomTabNavigator();
 
